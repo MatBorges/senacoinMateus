@@ -1,39 +1,133 @@
-*{
-    margin: 0;
+* {
+    box-sizing: border-box;
+    transition: all .3s ease;
+    font-size: 15px;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
     padding: 0;
-}
-
-a{
-    color: aliceblue;
-    text-decoration: none;
-    transition: 0.2s;
-}
-
-a:hover{
-    opacity: 0.5;
-}
-
-.logo{
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-nav{
+    margin: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+    background: #fff;
+    box-sizing: border-box;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 8vh;
-    background-color: burlywood;
-    font-family: Arial, Helvetica, sans-serif
 }
 
-.nav-list{
+aside{
+    /* top: 0; */
+    height: 100%;   
+    width: 320px;       
+}
+
+#lateral{   
+    width: 100%;    
+    height: 100%;
+    margin: 0 auto;
+    background: #e1e1e1;
+    border-radius: 0px 0px 100px;
+}
+
+.conteudoLateral {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#logo {
+    margin: 50px 5px 15px 5px;
+}
+
+#menu {
+    width: 100%;
+    max-width: 800px;
+}
+
+#menu .listaMenu {
+    display: grid;
+    padding-left: 20px;
+    padding-right: 20px;
     list-style: none;
-    display: flex;
 }
 
-.nav-list li{
-    letter-spacing: 2px;
-    margin-left: 32px;
+#menu .listaMenu .sessaoMenu {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#menu .listaMenu li {
+    margin-bottom: 10px;
+}
+
+#menu .listaMenu li a, span {
+    text-decoration: none;
+    color: black;
+    padding: .3rem;
+    padding-right: auto;
+}
+
+#menu .listaMenu li a:hover, span:hover{
+    width: 50%;
+    margin: 7px;
+    color: white;
+    background-color: #ac7100;
+    transition: all .3s ease;
+    border-radius: 5px 5px 5px 5px;
+    list-style: block;
+    cursor: pointer;
+}
+
+#tipos-usuarios, #opcoes-qrcode{
+    list-style: none;
+    display: none;
+}
+
+span:hover #tipos-usuarios{
+    width: 50%;
+    margin: 7px;
+    color: white;
+    background-color: #ac7100;
+    transition: all .3s ease;
+    border-radius: 5px 5px 5px 5px;
+    list-style: block;
+    cursor: pointer;
+}
+
+#sair {
+    padding: 5px;
+    width: 55px;
+    margin: 20% auto auto auto;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+#sair a {
+    text-decoration: none;
+    color: black;
+}
+
+#sair h2 {
+    margin: 0 0 0 0;
+}
+
+#sair:hover {
+    color: aliceblue;
+    margin: 20% auto auto auto;
+    background-color: #ac7100;
+    transition: all .3s ease;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+
+hr {
+    margin-bottom: 70px;
+    width: 100%;
+}
+
+#conteudo{       
+    width: 100%;
+    height: 100vh;
 }
