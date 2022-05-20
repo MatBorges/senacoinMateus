@@ -1,7 +1,16 @@
+:root{
+    --cor-btn-cancelar: #a8a8a8;
+    --cor-btn-cancelar-hover: #a8a8a883;
+    --cor-btn-cancelar-active: #a81313;
+
+    --cor-btn-salvar: #ac7100;
+    --cor-btn-salvar-hover: #ac70007e;
+    --cor-btn-salvar-active: #11AB59;    
+}
+
 * {
     box-sizing: border-box;
-    transition: all .3s ease;
-    font-size: 15px;
+    transition: all .2s ease;    
 }
 
 html, body{
@@ -16,7 +25,7 @@ html, body{
 }
 
 aside{
-    /* top: 0; */
+    top: 0;
     height: 100%;   
     width: 320px;       
 }
@@ -97,8 +106,7 @@ span:hover #tipos-usuarios{
 #sair {
     padding: 5px;
     width: 55px;
-    margin: 20% auto auto auto;
-    align-items: center;
+    margin: 20% auto auto auto;    
     text-align: center;
     text-decoration: none;
 }
@@ -108,8 +116,8 @@ span:hover #tipos-usuarios{
     color: black;
 }
 
-#sair h2 {
-    margin: 0 0 0 0;
+#icon-sair{
+    transform: scaleX(-1);
 }
 
 #sair:hover {
@@ -117,7 +125,7 @@ span:hover #tipos-usuarios{
     margin: 20% auto auto auto;
     background-color: #ac7100;
     transition: all .3s ease;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;    
 }
 
 
@@ -127,7 +135,114 @@ hr {
     width: 100%;
 }
 
-#conteudo{       
-    width: 100%;
+
+/* main */
+
+
+main{       
+    width: 100vw;
     height: 100vh;
+    text-align: center;
+    margin: auto;    
+}
+
+#conteudo{
+    width: 980px;
+    height: 900px;
+    border-radius: 20px;
+    margin: 50px auto;
+    background-color: #e1e1e1;
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.288);
+}
+
+#ttl-pagina{
+    vertical-align: middle;
+}
+
+.frm-cadastro{
+    width: 900px;
+    padding: 30px 4%;
+    margin: 100px auto; 
+}
+
+.campo{
+    position: relative;    
+    width: 50%;
+    margin: 30px auto auto auto;    
+}
+
+.campo label{    
+    cursor: text;
+    position: absolute;
+    bottom: 18px;
+    left: 10px;
+    color: var(--cor-btn-cancelar);
+    font-size: larger;
+}
+
+.ipt{
+    cursor: text;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-radius: 10px;
+    border-bottom: 2px solid var(--cor-btn-cancelar);
+    outline: 0;
+    font-size: 20px;
+}
+
+.ipt:focus, .ipt:valid{
+    border-bottom: 2px solid var(--cor-btn-salvar);
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.288);
+}
+
+.ipt:focus ~ label, .ipt:valid ~ label{
+    transform: translateY(-43px);
+    font-size: 15px;
+    color: var(--cor-btn-salvar);    
+}
+
+.btns{
+    width: 680px;    
+    position: relative;
+    margin: auto;
+    bottom: 0px;    
+}
+
+.btn{
+    border: none;
+    padding: 10px 10px;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: x-large;
+    outline: none;
+    cursor: pointer;
+    margin: 20px;
+    color: aliceblue;
+}
+
+.btn-cancelar{
+    background-color: var(--cor-btn-cancelar);    
+}
+
+.btn-cancelar:hover{
+    background-color: var(--cor-btn-cancelar-hover);    
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.288);
+}
+
+.btn-cancelar:active{
+    background-color: var(--cor-btn-cancelar-active);      
+}
+
+.btn-salvar{
+    background-color: var(--cor-btn-salvar);    
+}
+
+.btn-salvar:hover{
+    background-color: var(--cor-btn-salvar-hover);    
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.288);
+}
+.btn-salvar:active{
+    background-color: var(--cor-btn-salvar-active);    
 }

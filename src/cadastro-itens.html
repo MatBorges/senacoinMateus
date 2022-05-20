@@ -54,7 +54,31 @@
         </header>
         <main>
             <section id="conteudo">
-                <h1>DASHBOARD</h1>
+                <div class="ttl-pagina">
+                    <h1>Cadastro de Itens</h1>
+                </div>
+                <form class="frm-cadastro">
+                    <div class="campo">
+                        <input class="ipt" id="ipt-titulo" type="text" required>
+                        <label for="ipt-titulo">Titulo</label>
+                    </div>
+                    <div class="campo">
+                        <input class="ipt" id="ipt-valor" type="number" required>
+                        <label for="ipt-valor">Valor</label>
+                    </div>
+                    <div class="campo">
+                        <input class="ipt" id="ipt-qtd" type="number" required>
+                        <label for="ipt-qtd">Quantidade</label>
+                    </div>
+                    <div class="campo">
+                        <input class="ipt" id="ipt-descricao" type="text" required>
+                        <label for="ipt-descricao">Descrição</label>
+                    </div>
+                </form>
+                <div class="btns btns-cancelar-salvar">
+                    <input class="btn btn-cancelar" type="button" value="Cancelar" onclick="">
+                    <input class="btn btn-salvar" type="button" value="Salvar" onclick="">
+                </div>
             </section>
         </main>
     </body>
